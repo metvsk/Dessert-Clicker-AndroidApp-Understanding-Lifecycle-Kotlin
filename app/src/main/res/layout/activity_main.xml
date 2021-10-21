@@ -6,13 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/google" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total 1*250 = 250"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note: tap image to reset cart"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#727E00"
+                android:text="Close-Open-App in different ways to see Life Cycle records.. Add more logs in code to see infos"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/lifeCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#701B00"
+                android:fontFamily="@font/fira_mono_medium"
+                android:text="Onstart :"
+                android:textColor="#FFFCFC"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clear Log" />
+
+                <!--                TODO ' Self Test :Read,but it was a WASTE OF 5 MINUTES '  Try adding a view inside layout to clear the doubt whether onCreateView is working each time a view is created . If it is so then the count of the log texts that appear in the app should increase by the number of views we adde here-->
+
+<!--test views toggle comment out on following views by ctrl + / -->
+<!--                <ImageView-->
+<!--                    android:layout_width="30sp"-->
+<!--                    android:layout_height="30sp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/google"-->
+<!--                    />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/testButton1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Clear Log" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/testButton2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Clear Log" />-->
+
+
+<!--                test views end-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
