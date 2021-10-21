@@ -1,4 +1,4 @@
-<div><img src="app/src/main/res/drawable/google.png" width="100px"</img></div><img src="/screenshots/1.png" width="200px"/>
+<div><img src="app/src/main/res/drawable/google.png" width="100px"</img>
 # Dessert-Clicker-AndroidApp-Understanding-Lifecycle-Kotlin
 A little app with texts on screen to understand android app lifecycle
 Screenshot
@@ -7,3 +7,4 @@ Screenshot
     <img src="/screenshots/3.jpg" width="200px"/>
 
 </div>
+</div><img src="/screenshots/1.png" width="200px"/></div>
